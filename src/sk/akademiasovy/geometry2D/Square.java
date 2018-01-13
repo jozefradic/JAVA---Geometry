@@ -1,6 +1,6 @@
-package sk.akademiasovy.square;
+package sk.akademiasovy.geometry2D;
 
-public class Square {
+public class Square implements Operation, Diagonal {
     private double a;
 
     public double getA() {
@@ -18,11 +18,11 @@ public class Square {
     public Square () {          //toto je tiez konstruktor
         a=0;
     }
-
+    @Override
     public double getArea(){
         return a*a;
     }
-
+    @Override
     public double getPerimeter(){
         return 4*a;
     }
